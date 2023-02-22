@@ -5,7 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="stylesheet" href="./src/css/resposive.css">
+  <link rel="stylesheet" href="./src/css/frame.css">
+  <link rel="stylesheet" href="./src/css/modal.css">
+  <link rel="stylesheet" href="./src/css/pagination.css">
 
   <title>Projeto Flexbox & Grid</title>
 </head>
@@ -14,7 +18,7 @@
   <div class="container">
 
       <header class="header">
-        <img src="./img marvel/onebitlogo-marvel-white.png" alt="logo-header" class="logoNavBar">
+        <img src="./src/img/onebitlogo-marvel-white.png" alt="logo-header" class="logoNavBar">
         <div class="headerBtnGroup">
           <button class="navBtn">Filmes</button>
           <button class="navBtn">Séries</button>
@@ -22,143 +26,433 @@
         </div>
       </header>
 
-      <p class="sectionTitle" id="backToTop">BEM VINDO A ONEBIT<span>MARVEL</span></p>
+      <p class="sectionTitle" id="backToTop">Bem vindo a Onebit<span>MARVEL</span></p>
       <p class="sectionDescription">Aqui é onde você encontra todos os Filmes e Séries do Universo Cinematográfico Marvel.</p>
+      <p class="sectionTitle">Filmes</p>
     
       <section class="gridContainer">
-        <div class="mainContent">
+
+        <div id="content">
+
+          <div class="mainContent page active" id="1">
+
+              <div class="categoryCard">
+                <img src="./src/img/Filmes/V.Ultimato.jpeg" alt="mainCardImg" class="mainCardImg">
+                <p class="mainCategoryCardTitle">Vingadores: Ultimato</p>
+                <div>
+                  <button class="mainCategoryCardSinopse">Sinópse</button>
+                  <button class="mainCategoryCardTrailer" id="botao-trailer" data-src="https://www.youtube.com/embed/g6ng8iy-l0U">Assista ao Trailer!</button>
+                </div>
+              </div>
+
+              <div class="categoryCard">
+                <img src="./src/img/Filmes/Capita-marvel.jpeg" alt="mainCardImg" class="mainCardImg">
+                <p class="mainCategoryCardTitle">Capitã Marvel</p>
+                <div>
+                  <button class="mainCategoryCardSinopse">Sinópse</button>
+                  <button class="mainCategoryCardTrailer" id="botao-trailer" data-src="https://www.youtube.com/embed/JhY6Yy4wtb4">Assista ao Trailer!</button>
+                </div>
+              </div>
+
+              <div class="categoryCard">
+                <img src="./src/img/Filmes/Dr.Estranho-2.jpeg" alt="mainCardImg" class="mainCardImg">
+                <p class="mainCategoryCardTitle">Doutor Estranho: Multiverso da loucura</p>
+                <div>
+                  <button class="mainCategoryCardSinopse">Sinópse</button>
+                  <button class="mainCategoryCardTrailer" id="botao-trailer">Assista ao Trailer!</button>
+                </div>
+              </div>
+
+              <div class="categoryCard">
+                <img src="./src/img/Filmes/V.guerra-infinita.jpeg" alt="mainCardImg" class="mainCardImg">
+                <p class="mainCategoryCardTitle">Vingadores: Guerra Infinita</p>
+                <div>
+                  <button class="mainCategoryCardSinopse">Sinópse</button>
+                  <button class="mainCategoryCardTrailer" id="botao-trailer">Assista ao Trailer!</button>
+                </div>
+              </div>
+
+              <div class="categoryCard">
+                <img src="./src/img/Filmes/Eternos.jpeg" alt="mainCardImg" class="mainCardImg">
+                <p class="mainCategoryCardTitle">Eternos</p>
+                <div>
+                  <button class="mainCategoryCardSinopse">Sinópse</button>
+                  <button class="mainCategoryCardTrailer" id="botao-trailer">Assista ao Trailer!</button>
+                </div>
+              </div>
+
+              <div class="categoryCard">
+                <img src="./src/img/Filmes/Thor-amor-e-Trovao.jpeg" alt="mainCardImg" class="mainCardImg">
+                <p class="mainCategoryCardTitle">Thor: Amor e Trovão</p>
+                <div>
+                  <button class="mainCategoryCardSinopse">Sinópse</button>
+                  <button class="mainCategoryCardTrailer" id="botao-trailer">Assista ao Trailer!</button>
+                </div>
+              </div>
+
+              <div class="categoryCard">
+                <img src="./src/img/Filmes/H.Formiga-2.jpeg" alt="mainCardImg" class="mainCardImg">
+                <p class="mainCategoryCardTitle">Homem Formiga e a Vespa</p>
+                <div>
+                  <button class="mainCategoryCardSinopse">Sinópse</button>
+                  <button class="mainCategoryCardTrailer" id="botao-trailer">Assista ao Trailer!</button>
+                </div>
+              </div>
+
+              <div class="categoryCard">
+                <img src="./src/img/Filmes/HA-Longe-de-casa.jpeg" alt="mainCardImg" class="mainCardImg">
+                <p class="mainCategoryCardTitle">Homem Aranha: Longe de casa</p>
+                <div>
+                  <button class="mainCategoryCardSinopse">Sinópse</button>
+                  <button class="mainCategoryCardTrailer" id="botao-trailer">Assista ao Trailer!</button>
+                </div>
+              </div>
+
+              <div class="categoryCard">
+                <img src="./src/img/Filmes/Pantera-Negra-2.jpeg" alt="mainCardImg" class="mainCardImg">
+                <p class="mainCategoryCardTitle">Pantera Negra: Wakanda para sempre</p>
+                <div>
+                  <button class="mainCategoryCardSinopse">Sinópse</button>
+                  <button class="mainCategoryCardTrailer" id="botao-trailer">Assista ao Trailer!</button>
+                </div>
+              </div>
+          </div>
+
+          <div class="mainContent page" id="2">
+
             <div class="categoryCard">
-              <img src="./img marvel/Filmes/V.Ultimato.jpeg" alt="mainCardImg" class="mainCardImg">
+              <img src="./src/img/Filmes/guardioes-da-galaxia-1.jpeg" alt="mainCardImg" class="mainCardImg">
               <p class="mainCategoryCardTitle">Vingadores: Ultimato</p>
               <div>
-                <a href="#" class="mainCategoryCardSinopse">Sinópse</a>
-                <a href="#" class="mainCategoryCardTrailer">Assista ao Trailer!</a>
+                <button class="mainCategoryCardSinopse">Sinópse</button>
+                <button class="mainCategoryCardTrailer" id="botao-trailer">Assista ao Trailer!</button>
               </div>
             </div>
 
             <div class="categoryCard">
-              <img src="./img marvel/Filmes/Capita-marvel.jpeg" alt="mainCardImg" class="mainCardImg">
+              <img src="./src/img/Filmes/guardioes-da-galaxia-vol2.jpeg" alt="mainCardImg" class="mainCardImg">
               <p class="mainCategoryCardTitle">Capitã Marvel</p>
               <div>
-                <a href="#" class="mainCategoryCardSinopse">Sinópse</a>
-                <a href="#" class="mainCategoryCardTrailer">Assista ao Trailer!</a>
+                <button class="mainCategoryCardSinopse">Sinópse</button>
+                <button class="mainCategoryCardTrailer" id="botao-trailer">Assista ao Trailer!</button>
               </div>
             </div>
 
             <div class="categoryCard">
-              <img src="./img marvel/Filmes/Dr.Estranho-2.jpeg" alt="mainCardImg" class="mainCardImg">
-              <p class="mainCategoryCardTitle">Doutor Estranho: Multiverso da loucura</p>
-              <div>
-                <a href="#" class="mainCategoryCardSinopse">Sinópse</a>
-                <a href="#" class="mainCategoryCardTrailer">Assista ao Trailer!</a>
-              </div>
-            </div>
-
-            <div class="categoryCard">
-              <img src="./img marvel/Filmes/V.guerra-infinita.jpeg" alt="mainCardImg" class="mainCardImg">
+              <img src="./src/img/Filmes/hm-de-volta-ao-lar.jpeg" alt="mainCardImg" class="mainCardImg">
               <p class="mainCategoryCardTitle">Vingadores: Guerra Infinita</p>
               <div>
-                <a href="#" class="mainCategoryCardSinopse">Sinópse</a>
-                <a href="#" class="mainCategoryCardTrailer">Assista ao Trailer!</a>
+                <button class="mainCategoryCardSinopse">Sinópse</button>
+                <button class="mainCategoryCardTrailer" id="botao-trailer">Assista ao Trailer!</button>
               </div>
             </div>
 
             <div class="categoryCard">
-              <img src="./img marvel/Filmes/Eternos.jpeg" alt="mainCardImg" class="mainCardImg">
+              <img src="./src/img/Filmes/dr-estranho.jpeg" alt="mainCardImg" class="mainCardImg">
               <p class="mainCategoryCardTitle">Eternos</p>
               <div>
-                <a href="#" class="mainCategoryCardSinopse">Sinópse</a>
-                <a href="#" class="mainCategoryCardTrailer">Assista ao Trailer!</a>
+                <button class="mainCategoryCardSinopse">Sinópse</button>
+                <button class="mainCategoryCardTrailer" id="botao-trailer">Assista ao Trailer!</button>
               </div>
             </div>
 
             <div class="categoryCard">
-              <img src="./img marvel/Filmes/Thor-amor-e-Trovao.jpeg" alt="mainCardImg" class="mainCardImg">
+              <img src="./src/img/Filmes/cp-america.jpeg" alt="mainCardImg" class="mainCardImg">
               <p class="mainCategoryCardTitle">Thor: Amor e Trovão</p>
               <div>
-                <a href="#" class="mainCategoryCardSinopse">Sinópse</a>
-                <a href="#" class="mainCategoryCardTrailer">Assista ao Trailer!</a>
+                <button class="mainCategoryCardSinopse">Sinópse</button>
+                <button class="mainCategoryCardTrailer" id="botao-trailer">Assista ao Trailer!</button>
               </div>
             </div>
 
             <div class="categoryCard">
-              <img src="./img marvel/Filmes/H.Formiga-2.jpeg" alt="mainCardImg" class="mainCardImg">
+              <img src="./src/img/Filmes/cp-america-soldado-invernal.jpeg" alt="mainCardImg" class="mainCardImg">
               <p class="mainCategoryCardTitle">Homem Formiga e a Vespa</p>
               <div>
-                <a href="#" class="mainCategoryCardSinopse">Sinópse</a>
-                <a href="#" class="mainCategoryCardTrailer">Assista ao Trailer!</a>
+                <button class="mainCategoryCardSinopse">Sinópse</button>
+                <button class="mainCategoryCardTrailer" id="botao-trailer">Assista ao Trailer!</button>
               </div>
             </div>
 
             <div class="categoryCard">
-              <img src="./img marvel/Filmes/HA-Longe-de-casa.jpeg" alt="mainCardImg" class="mainCardImg">
+              <img src="./src/img/Filmes/cp-ameria-guerra-civil.jpeg" alt="mainCardImg" class="mainCardImg">
               <p class="mainCategoryCardTitle">Homem Aranha: Longe de casa</p>
               <div>
-                <a href="#" class="mainCategoryCardSinopse">Sinópse</a>
-                <a href="#" class="mainCategoryCardTrailer">Assista ao Trailer!</a>
+                <button class="mainCategoryCardSinopse">Sinópse</button>
+                <button class="mainCategoryCardTrailer" id="botao-trailer">Assista ao Trailer!</button>
               </div>
             </div>
 
             <div class="categoryCard">
-              <img src="./img marvel/Filmes/Pantera-Negra-2.jpeg" alt="mainCardImg" class="mainCardImg">
+              <img src="./src/img/Filmes/pantera-negra-1.jpeg" alt="mainCardImg" class="mainCardImg">
               <p class="mainCategoryCardTitle">Pantera Negra: Wakanda para sempre</p>
               <div>
-                <a href="#" class="mainCategoryCardSinopse">Sinópse</a>
-                <a href="#" class="mainCategoryCardTrailer">Assista ao Trailer!</a>
+                <button class="mainCategoryCardSinopse">Sinópse</button>
+                <button class="mainCategoryCardTrailer" id="botao-trailer">Assista ao Trailer!</button>
               </div>
             </div>
 
             <div class="categoryCard">
-              <img src="./img marvel/Filmes/Shang-chi.jpeg" alt="mainCardImg" class="mainCardImg">
+              <img src="./src/img/Filmes/Shang-chi.jpeg" alt="mainCardImg" class="mainCardImg">
               <p class="mainCategoryCardTitle">Shang Chi</p>
               <div>
-                <a href="#" class="mainCategoryCardSinopse">Sinópse</a>
-                <a href="#" class="mainCategoryCardTrailer">Assista ao Trailer!</a>
+                <button class="mainCategoryCardSinopse">Sinópse</button>
+                <button class="mainCategoryCardTrailer" id="botao-trailer">Assista ao Trailer!</button>
               </div>
             </div>
-        </div>
+          </div>
 
+          <div class="mainContent page" id="3">
+
+            <div class="categoryCard">
+              <img src="./src/img/Filmes/hm-ferro-1.jpeg" alt="mainCardImg" class="mainCardImg">
+              <p class="mainCategoryCardTitle">Capitã Marvel</p>
+              <div>
+                <button class="mainCategoryCardSinopse">Sinópse</button>
+                <button class="mainCategoryCardTrailer" id="botao-trailer">Assista ao Trailer!</button>
+              </div>
+            </div>
+
+            <div class="categoryCard">
+              <img src="./src/img/Filmes/hm-ferro-2.jpeg" alt="mainCardImg" class="mainCardImg">
+              <p class="mainCategoryCardTitle">Doutor Estranho: Multiverso da loucura</p>
+              <div>
+                <button class="mainCategoryCardSinopse">Sinópse</button>
+                <button class="mainCategoryCardTrailer" id="botao-trailer">Assista ao Trailer!</button>
+              </div>
+            </div>
+
+            <div class="categoryCard">
+              <img src="./src/img/Filmes/hm-ferro-3.jpeg" alt="mainCardImg" class="mainCardImg">
+              <p class="mainCategoryCardTitle">Vingadores: Guerra Infinita</p>
+              <div>
+                <button class="mainCategoryCardSinopse">Sinópse</button>
+                <button class="mainCategoryCardTrailer" id="botao-trailer">Assista ao Trailer!</button>
+              </div>
+            </div>
+
+            <div class="categoryCard">
+              <img src="./src/img/Filmes/hm-formiga-1.jpeg" alt="mainCardImg" class="mainCardImg">
+              <p class="mainCategoryCardTitle">Eternos</p>
+              <div>
+                <button class="mainCategoryCardSinopse">Sinópse</button>
+                <button class="mainCategoryCardTrailer" id="botao-trailer">Assista ao Trailer!</button>
+              </div>
+            </div>
+
+            <div class="categoryCard">
+              <img src="./src/img/Filmes/thor.jpeg" alt="mainCardImg" class="mainCardImg">
+              <p class="mainCategoryCardTitle">Thor: Amor e Trovão</p>
+              <div>
+                <button class="mainCategoryCardSinopse">Sinópse</button>
+                <button class="mainCategoryCardTrailer" id="botao-trailer">Assista ao Trailer!</button>
+              </div>
+            </div>
+
+            <div class="categoryCard">
+              <img src="./src/img/Filmes/thor-mundo-sombrio.jpg" alt="mainCardImg" class="mainCardImg">
+              <p class="mainCategoryCardTitle">Homem Formiga e a Vespa</p>
+              <div>
+                <button class="mainCategoryCardSinopse">Sinópse</button>
+                <button class="mainCategoryCardTrailer" id="botao-trailer">Assista ao Trailer!</button>
+              </div>
+            </div>
+
+            <div class="categoryCard">
+              <img src="./src/img/Filmes/thor-ragnarok.jpeg" alt="mainCardImg" class="mainCardImg">
+              <p class="mainCategoryCardTitle">Homem Aranha: Longe de casa</p>
+              <div>
+                <button class="mainCategoryCardSinopse">Sinópse</button>
+                <button class="mainCategoryCardTrailer" id="botao-trailer">Assista ao Trailer!</button>
+              </div>
+            </div>
+
+            <div class="categoryCard">
+              <img src="./src/img/Filmes/os-vingadores.jpeg" alt="mainCardImg" class="mainCardImg">
+              <p class="mainCategoryCardTitle">Pantera Negra: Wakanda para sempre</p>
+              <div>
+                <button class="mainCategoryCardSinopse">Sinópse</button>
+                <button class="mainCategoryCardTrailer" id="botao-trailer">Assista ao Trailer!</button>
+              </div>
+            </div>
+
+            <div class="categoryCard">
+              <img src="./src/img/Filmes/vingadores-era-ultron.jpeg" alt="mainCardImg" class="mainCardImg">
+              <p class="mainCategoryCardTitle">Shang Chi</p>
+              <div>
+                <button class="mainCategoryCardSinopse">Sinópse</button>
+                <button class="mainCategoryCardTrailer" id="botao-trailer">Assista ao Trailer!</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mainContent page" id="4">
+
+            <div class="categoryCard">
+              <img src="./src/img/Filmes/hulk.jpeg" alt="mainCardImg" class="mainCardImg">
+              <p class="mainCategoryCardTitle">Capitã Marvel</p>
+              <div>
+                <button class="mainCategoryCardSinopse">Sinópse</button>
+                <button class="mainCategoryCardTrailer" id="botao-trailer">Assista ao Trailer!</button>
+              </div>
+            </div>
+
+            <div class="categoryCard">
+              <img src="./src/img/Filmes/viuva-negra.jpeg" alt="mainCardImg" class="mainCardImg">
+              <p class="mainCategoryCardTitle">Doutor Estranho: Multiverso da loucura</p>
+              <div>
+                <button class="mainCategoryCardSinopse">Sinópse</button>
+                <button class="mainCategoryCardTrailer" id="botao-trailer">Assista ao Trailer!</button>
+              </div>
+            </div>
+
+            <div class="categoryCard">
+              <img src="./src/img/Filmes/V.guerra-infinita.jpeg" alt="mainCardImg" class="mainCardImg">
+              <p class="mainCategoryCardTitle">Vingadores: Guerra Infinita</p>
+              <div>
+                <button class="mainCategoryCardSinopse">Sinópse</button>
+                <button class="mainCategoryCardTrailer" id="botao-trailer">Assista ao Trailer!</button>
+              </div>
+            </div>
+
+            <div class="categoryCard">
+              <img src="./src/img/Filmes/Eternos.jpeg" alt="mainCardImg" class="mainCardImg">
+              <p class="mainCategoryCardTitle">Eternos</p>
+              <div>
+                <button class="mainCategoryCardSinopse">Sinópse</button>
+                <button class="mainCategoryCardTrailer" id="botao-trailer">Assista ao Trailer!</button>
+              </div>
+            </div>
+
+            <div class="categoryCard">
+              <img src="./src/img/Filmes/Thor-amor-e-Trovao.jpeg" alt="mainCardImg" class="mainCardImg">
+              <p class="mainCategoryCardTitle">Thor: Amor e Trovão</p>
+              <div>
+                <button class="mainCategoryCardSinopse">Sinópse</button>
+                <button class="mainCategoryCardTrailer" id="botao-trailer">Assista ao Trailer!</button>
+              </div>
+            </div>
+
+            <div class="categoryCard">
+              <img src="./src/img/Filmes/H.Formiga-2.jpeg" alt="mainCardImg" class="mainCardImg">
+              <p class="mainCategoryCardTitle">Homem Formiga e a Vespa</p>
+              <div>
+                <button class="mainCategoryCardSinopse">Sinópse</button>
+                <button class="mainCategoryCardTrailer" id="botao-trailer">Assista ao Trailer!</button>
+              </div>
+            </div>
+
+            <div class="categoryCard">
+              <img src="./src/img/Filmes/HA-Longe-de-casa.jpeg" alt="mainCardImg" class="mainCardImg">
+              <p class="mainCategoryCardTitle">Homem Aranha: Longe de casa</p>
+              <div>
+                <button class="mainCategoryCardSinopse">Sinópse</button>
+                <button class="mainCategoryCardTrailer" id="botao-trailer">Assista ao Trailer!</button>
+              </div>
+            </div>
+
+            <div class="categoryCard">
+              <img src="./src/img/Filmes/Pantera-Negra-2.jpeg" alt="mainCardImg" class="mainCardImg">
+              <p class="mainCategoryCardTitle">Pantera Negra: Wakanda para sempre</p>
+              <div>
+                <button class="mainCategoryCardSinopse">Sinópse</button>
+                <button class="mainCategoryCardTrailer" id="botao-trailer">Assista ao Trailer!</button>
+              </div>
+            </div>
+
+            <div class="categoryCard">
+              <img src="./src/img/Filmes/Shang-chi.jpeg" alt="mainCardImg" class="mainCardImg">
+              <p class="mainCategoryCardTitle">Shang Chi</p>
+              <div>
+                <button class="mainCategoryCardSinopse">Sinópse</button>
+                <button class="mainCategoryCardTrailer" id="botao-trailer">Assista ao Trailer!</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="pagination">
+            <ul>
+              <li><a href="#content" data-page="1" class="active">1</a></li>
+              <li><a href="#content" data-page="2">2</a></li>
+              <li><a href="#content" data-page="3">3</a></li>
+              <li><a href="#content" data-page="4">4</a></li>
+            </ul>
+          </div>
+        </div>
+      
         <div class="sidebarContent">
-          <p>SÉRIES DISNEY</p>
+          <p>TOP 10</p>
 
           <div class="sidebarCard">
-            <img src="./img marvel/Series/caveleiro-da-lua.jpeg" alt="sideBarCardImg" class="sideBarCardImg">
-            <p class="sidebarCardTitle">Cavaleiro da Lua</p>
+            <img src="./src/img/Filmes/pantera-negra-1.jpeg" alt="sideBarCardImg" class="sideBarCardImg">
+            <p class="sidebarCardTitle"><span>1º</span>- Pantera Negra (2018)</p>
           </div>
 
           <div class="sidebarCard">
-            <img src="./img marvel/Series/loki.jpeg" alt="sideBarCardImg" class="sideBarCardImg">
-            <p class="sidebarCardTitle">Loki</p>
+            <img src="./src/img/Filmes/V.Ultimato.jpeg" alt="sideBarCardImg" class="sideBarCardImg">
+            <p class="sidebarCardTitle"><span>2º</span>- Vingadores: Ultimato (2019)</p>
           </div>
 
           <div class="sidebarCard">
-            <img src="./img marvel/Series/gaviao-arqueiro.jpeg" alt="sideBarCardImg" class="sideBarCardImg">
-            <p class="sidebarCardTitle">Gavião Arqueiro</p>
+            <img src="./src/img/Filmes/hm-ferro-1.jpeg" alt="sideBarCardImg" class="sideBarCardImg">
+            <p class="sidebarCardTitle"><span>3º</span>- Homem de Ferro (2008)</p>
           </div>
 
           <div class="sidebarCard">
-            <img src="./img marvel/Series/msmarvel.jpeg" alt="sideBarCardImg" class="sideBarCardImg">
-            <p class="sidebarCardTitle">MS Marvel</p>
+            <img src="./src/img/Filmes/thor-ragnarok.jpeg" alt="sideBarCardImg" class="sideBarCardImg">
+            <p class="sidebarCardTitle"><span>4º</span>- Thor: Ragnarok (2017)</p>
           </div>
 
           <div class="sidebarCard">
-            <img src="./img marvel/Series/mulher-Hulk.jpeg" alt="sideBarCardImg" class="sideBarCardImg">
-            <p class="sidebarCardTitle">Mulher Hulk</p>
+            <img src="./src/img/Filmes/hm-sem-volta-para-casa.jpeg" alt="sideBarCardImg" class="sideBarCardImg">
+            <p class="sidebarCardTitle"><span>5º</span>- Homem-Aranha: Sem Volta para Casa (2021)</p>
           </div>
 
           <div class="sidebarCard">
-            <img src="./img marvel/Series/wandaVision.jpeg" alt="sideBarCardImg" class="sideBarCardImg">
-            <p class="sidebarCardTitle">Wanda Vision</p>
+            <img src="./src/img/Filmes/hm-de-volta-ao-lar.jpeg" alt="sideBarCardImg" class="sideBarCardImg">
+            <p class="sidebarCardTitle"><span>6º</span>- Homem-Aranha: De Volta ao Lar (2017)</p>
+          </div>
+
+          <div class="sidebarCard">
+            <img src="./src/img/Filmes/guardioes-da-galaxia-1.jpeg" alt="sideBarCardImg" class="sideBarCardImg">
+            <p class="sidebarCardTitle"><span>7º</span>- Guardiões da Galáxia (2014)</p>
+          </div>
+
+          <div class="sidebarCard">
+            <img src="./src/img/Filmes/os-vingadores.jpeg" alt="sideBarCardImg" class="sideBarCardImg">
+            <p class="sidebarCardTitle"><span>8º</span>- Os Vingadores (2012)</p>
+          </div>
+
+          <div class="sidebarCard">
+            <img src="./src/img/Filmes/Shang-chi.jpeg" alt="sideBarCardImg" class="sideBarCardImg">
+            <p class="sidebarCardTitle"><span>9º</span>- Shang-Chi e a Lenda dos Dez Anéis (2021)</p>
+          </div>
+
+          <div class="sidebarCard">
+            <img src="./src/img/Filmes/HA-Longe-de-casa.jpeg" alt="sideBarCardImg" class="sideBarCardImg">
+            <p class="sidebarCardTitle"><span>10º</span>- Homem-Aranha: Longe de Casa (2019)</p>
           </div>
         </div>
+      
+        <div class="modal">
+          <div class="conteudo-modal">
+            <span class="fechar-modal">X</span>
+            <iframe id="video" width="560" height="315" src="" title="Trailer Oficial" frameborder="1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
       </section>
 
       <footer class="footer">
-        <img src="./img marvel/onebitlogo-marvel-white.png" alt="logo-footer" class="logoFooter">
+        <img src="./src/img/onebitlogo-marvel-white.png" alt="logo-footer" class="logoFooter">
         <a href="#backToTop" class="footerAnchor">VOLTAR PARA O TOPO</a>
       </footer>
       
   </div>
+
+  <script src="./src/script/frame.js"></script>
+  <script src="./src/script/pagination.js"></script>
 
 </body>
 </html>
