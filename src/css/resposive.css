@@ -1,0 +1,25 @@
+@media (max-width: 630px){
+  .gridContainer{
+    grid-template-areas: "mainContent"
+                         "sidebarContent";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .sidebarContent{
+    min-width: auto;
+  }
+  .footerAnchor{
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 534px){
+  .header{
+    justify-content: center;
+  }
+  .footer{
+    justify-content: center;
+  }
+}
